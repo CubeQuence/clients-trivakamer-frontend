@@ -1,0 +1,16 @@
+.text-triblue {
+  color: #1391d2 !important;
+}
+
+.text-triyellow {
+  color: #fc9e15 !important;
+}
+
+.text-trired {
+  color: #e3403d !important;
+}
+
+.nav-item .border-primary {
+  border-color: #1391d2 !important;
+  font-weight: bold;
+}
