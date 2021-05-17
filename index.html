@@ -10,68 +10,148 @@
 
     <title>Trivakamer</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+
 
     <meta name="theme-color" content="#563d7c" />
   </head>
+  <header></header>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Trivago</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarsExampleDefault"
-        aria-controls="navbarsExampleDefault"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item active">
-            <a
-              class="
-                nav-link
-                text-triblue
-                border border-primary
-                rounded-pill
-                px-4
-              "
-              href="#"
-            >
-              Home
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="dropdown01"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+      <div class="container-fluid">
+        <a class="navbar-brand mb-2" href="#">
+          <img
+            src="assets/images/logo_full_nobackground.png"
+            alt=""
+            width="200"
+            height="34"
+          />
+        </a>
+        <div class="d-flex">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item active m-1">
+              <a
+                class="
+                  nav-link
+                  text-trired
+                  fw-bold
+                  border border-danger
+                  rounded-pill
+                  px-4
+                "
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item active m-1">
+              <a
+                class="
+                  nav-link
+                  text-triblue
+                  fw-bold
+                  border border-primary
+                  rounded-pill
+                  px-4
+                "
+                href="#"
+                >Contact</a
+              >
+            </li>
+             <li class="nav-item active m-1">
+              <a
+                class="
+                  nav-link
+                  text-triyellow
+                  fw-bold
+                  border border-warning
+                  rounded-pill
+                  px-4
+                "
+                href="#"
+                >About us</a
+              >
+            </li>
+          </ul>
+          </div>
+        </div>
       </div>
     </nav>
 
-    <main role="main" class="container"></main>
+    <main role="main" class="container-fluid" >
+<div class="container px-5" style="width: 60%">
+  <div class="row justify-content-evenly gx-2 mb-2">
+    <div class="col">
+      <div class="input-group flex-nowrap">
+        <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping">
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-evenly gx-2 mb-4">
+    <div class="col-5">
+
+      <div class="input-group">
+        <input type="text" aria-label="First name" class="form-control" placeholder="Minimum price">
+        <input type="text" aria-label="Last name" class="form-control" placeholder="Maxmimum price">
+      </div>
+    </div>
+          <!-- </div> -->
+        <div class="col-5">
+      <div class="input-group">
+        <input type="text" aria-label="First name" class="form-control" placeholder="Mimimum size">
+        <input type="text" aria-label="Last name" class="form-control" placeholder="Maximum size">
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="container" style="width: 65%">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://resources.kamernet.nl/image/947fa56f-72c3-4016-9398-0d551d6bf106" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title mb-0">Graafseweg 1</h4>
+              <p class="card-text" style="font-size: .90rem"><strong>€250p/m</strong> | <strong>6m<sup>2</sup></strong> | <strong>17-05-2021</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://resources.kamernet.nl/image/ddb9f24e-b055-4832-b821-bff931523724" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title mb-0">Vosstraat 2</h4>
+              <p class="card-text" style="font-size: .90rem"><strong>€250p/m</strong> | <strong>6m<sup>2</sup></strong> | <strong>17-05-2021</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://resources.kamernet.nl/image/a39be9f0-e67a-4e71-88f3-d73cd0c452eb" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title mb-0">Sint Annastraat 3</h4>
+              <p class="card-text" style="font-size: .90rem"><strong>€250p/m</strong> | <strong>6m<sup>2</sup></strong> | <strong>17-05-2021</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://resources.kamernet.nl/image/33ed112e-1b34-4c61-bd90-60043eb54e29" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title mb-0">Bosduifstraat 22</h4>
+              <p class="card-text" style="font-size: .90rem"><strong>€250p/m</strong> | <strong>6m<sup>2</sup></strong> | <strong>17-05-2021</strong></p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </main>
     <!-- /.container -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

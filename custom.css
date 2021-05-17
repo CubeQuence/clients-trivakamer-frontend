@@ -10,7 +10,8 @@
   color: #e3403d !important;
 }
 
-.nav-item .border-primary {
-  border-color: #1391d2 !important;
-  font-weight: bold;
+.card-img-top {
+  width: 100% !important;
+  height: 15vw !important;
+  object-fit: cover !important;
 }
