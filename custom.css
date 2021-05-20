@@ -10,6 +10,30 @@
   color: #e3403d !important;
 }
 
+.btn-triblue {
+  color: #2daceb !important;
+}
+
+.btn-triblue:hover{
+  color: #1391d2!important;
+}
+
+.btn-triyellow {
+  color: #fcad36 !important;
+}
+
+.btn-triyellow:hover{
+  color: #fc9e15 !important;
+}
+
+.btn-trired {
+  color: #e96563 !important;
+}
+
+.btn-trired:hover{
+  color: #e3403d !important;
+}
+
 .card-img-top {
   width: 100% !important;
   height: 15vw !important;
