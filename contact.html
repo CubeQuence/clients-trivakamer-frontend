@@ -15,15 +15,13 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="custom.css">
-
-
+    <link rel="stylesheet" type="text/css" href="custom.css" />
 
     <meta name="theme-color" content="#563d7c" />
   </head>
   <header></header>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand mb-2" href="#">
           <img
@@ -33,75 +31,118 @@
             height="34"
           />
         </a>
-        <div class="d-flex">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item active m-1">
-              <a
-                class="
-                  nav-link
-                  text-trired
-                  fw-bold
-                  border border-danger
-                  rounded-pill
-                  px-4
-                "
-                href="#"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item active m-1">
-              <a
-                class="
-                  nav-link
-                  text-triblue
-                  fw-bold
-                  border border-primary
-                  rounded-pill
-                  px-4
-                "
-                href="#"
-                >Contact</a
-              >
-            </li>
-             <li class="nav-item active m-1">
-              <a
-                class="
-                  nav-link
-                  text-triyellow
-                  fw-bold
-                  border border-warning
-                  rounded-pill
-                  px-4
-                "
-                href="#"
-                >About us</a
-              >
-            </li>
-          </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#headerNavbar"
+          aria-controls="headerNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="headerNavbar"
+        >
+          <div class="d-md-flex">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item active m-1">
+                <a
+                  class="
+                    nav-link
+                    btn-trired
+                    fw-bold
+                    border border-danger
+                    rounded-pill
+                    px-4
+                    text-center
+                  "
+                  href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item active m-1">
+                <a
+                  class="
+                    nav-link
+                    btn-triblue
+                    fw-bold
+                    border border-primary
+                    rounded-pill
+                    px-4
+                    text-center
+                  "
+                  href="/contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item active m-1">
+                <a
+                  class="
+                    nav-link
+                    btn-triyellow
+                    fw-bold
+                    border border-warning
+                    rounded-pill
+                    px-4
+                    text-center
+                  "
+                  href="/about.html"
+                  >About us</a
+                >
+              </li>
+              <li class="nav-item active m-1">
+                <a
+                  class="
+                    nav-link
+                    fw-bold
+                    border border-dark
+                    rounded-pill
+                    px-4
+                    text-center
+                  "
+                  href="#"
+                  >Log in</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </nav>
 
-    <main role="main" class="container-fluid" >
-  <div class="container px-5" style="width: 60%">
-    <h2 class="mb-2">Contact form</h2>
-    <form>
-      <div class="mb-3">
-        <label for="exampleInputEmail" class="form-label">Name</label>
-        <input type="email" class="form-control" id="inputName" aria-describedby="emailHelp">
+    <main role="main" class="container-fluid">
+      <div class="container px-5" style="width: 60%">
+        <h2 class="mb-2">Contact form</h2>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail" class="form-label">Name</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputName"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword" class="form-label"
+              >Email address</label
+            >
+            <input type="text" class="form-control" id="inputEmail" />
+          </div>
+          <div class="mb-3">
+            <label for="textArea" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="textArea"
+              style="height: 100px"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword" class="form-label">Email address</label>
-        <input type="text" class="form-control" id="inputEmail">
-      </div>
-      <div class="mb-3">
-        <label for="textArea" class="form-label">Message</label>
-        <textarea class="form-control" id="textArea" style="height: 100px"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
     </main>
     <!-- /.container -->
     <script
