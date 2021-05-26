@@ -16,6 +16,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="custom.css" />
+    <link rel="stylesheet" href="css/rSlider.min.css" />
+    <script src="js/rSlider.min.js"></script>
 
     <meta name="theme-color" content="#563d7c" />
   </head>
@@ -186,9 +188,21 @@
                   </div>
                 </div>
               </div>
+
+              <div class="row gx-2 my-1">
+                <input type="text" id="slider" class="slider" />
+              </div>
             </div>
             <div class="col-0 col-lg-2"></div>
           </div>
+          <script>
+            var mySlider = new rSlider({
+              target: "#slider",
+              values: [1, 2, 3, 4, 5, 6, 7, 2011],
+              range: true, // range slider
+              labels: false,
+            });
+          </script>
         </form>
       </div>
 
